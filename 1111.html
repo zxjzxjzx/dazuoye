@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PLAYERUNKNOWN</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_655434_cjcwlshu7wcm1jor.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        ul{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        .layout{
+            min-width:600px;
+            margin:0 auto;
+        }
+        html,body{
+            height:100%;
+        }
+        .indexfix::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+       .flex-con{
+            position:relative;
+            height:100%;
+            min-height:600px;
+            font-size:18px;
+            color:#fff;
+            background:#000 url(https://i.loli.net/2018/05/06/5aeefe5ee673b.jpg)
+           center center no-repeat;
+            background-size:cover;
+        }
+        header .logo{
+            color:#ffff77;
+            margin:10px;
+            font-size:25px;
+            float:left
+
+        }
+        header .navbr{
+            float:right;
+        }
+        header .navbr>li{
+            float:left;
+        }
+        header .navbr a{
+            padding:10px;
+            color:#fff;
+            font-size:20px;
+            display: inline-block;
+        }
+        header .navbr a:hover{
+            background-color:#ffff77;
+            opacity: 0.8;
+            border-radius:4px;
+        }
+        header .con{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            text-align:center;
+        }
+        header h1{
+            font-size:32px;
+            margin:20px;
+        }
+        header h2{
+            font-size:25px;
+            margin:20px;
+        }
+        header .con .button{
+            font-size:25px;
+            background:#ffff77;
+            padding:10px;
+            border-radius:8px;
+        }
+        header .con .button:hover{
+            opacity: 0.6;
+        }
+        section{
+            text-align:center;
+        }
+        section>h2{
+            font-size:35px;
+            padding:15px;
+            margin-top:50px;
+        }
+        section>p{
+            font-size:25px;
+            padding:8px;
+            margin-top:8px;
+        }
+        section>.family-con>li{
+            float:left;
+            width:50%;
+            margin-top:10px;
+        }
+        section>ul>.fon{
+            margin-left:25%;
+        }
+        section>ul>li>.iconfont{
+            font-size:35px;
+        }
+        section>ul p{
+            font-size:15px;
+            margin:15px;
+        }
+        section>ul h3{
+            font-size：28px;
+            margin:15px;
+        }
+        section>ul>.bbb{
+            width:calc(33.33% - 20px);
+            height:350px;
+
+        }
+         section>ul>.bbb{
+           margin-top:50px;
+         }
+        section>.hhh img{
+            width:100px;
+            height:100px;
+            border:3px solid lightgreen;
+            border-radius:50%;
+
+        }
+        section>.hhh li::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        section>.hhh  li:nth-child(odd){
+            margin-top:20px;
+            padding-right:calc(50% - 50px);
+
+        }
+        section>.hhh  li:nth-child(odd) img{
+            float:right;
+        }
+        section>.hhh li:nth-child(odd) dl{
+            text-align:right;
+            margin-right:125px;
+        }
+        section>.hhh  li:nth-child(even){
+            padding-left:calc(50% - 50px);
+            text-align:left;
+            margin-top:20px;
+        }
+        section>.hhh  li:nth-child(even) img{
+            float:left;
+        }
+        section>.hhh li:nth-child(even) dl {
+            text-align: left;
+            margin-left: 125px;
+        }
+        section>.hhh dt{
+            font-size:20px;
+            font-weight:bold;
+        }
+        section>.hhh dd:nth-of-type(1){
+            font-size:15px;
+            color:#ccc;
+        }
+        section .hhh>li{
+            height:110px;
+            position:relative;
+        }
+        section .hhh > li::after{
+            content:'';
+            position:absolute;
+            left:50%;
+            top:100px;
+            display:inline-block;
+            height:35px;
+            width:4px;
+            background-color:lightgreen;
+        }
+        section>.tag{
+            position:relative;
+        }
+       section>.tag>img{
+            width:100px;
+            height:100px;
+            border:3px solid lightgreen;
+            border-radius:50%;
+           position:absolute;
+           left:calc(50% - 50px);
+           top:20px;
+        }
+        footer{
+            text-align:center;
+            margin-top:200px;
+        }
+        footer>.items img{
+            width:200px;
+            height:100px;
+            border:3px solid lightblue;
+            border-radius:100%;
+        }
+        footer>.items{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        footer>.items li{
+            float:left;
+            width:33.33%;
+            margin-top:50px;
+        }
+        footer h2{
+            font-size:35px;
+            margin-top:20px;
+        }
+        footer h3{
+            font-size:20px;
+            margin-top:25px;
+        }
+        .footer-ml{
+            margin-top:250px;
+            text-align:center;
+            font-size:20px;
+            color:#ffffbb;
+            height:750px;
+        }
+        .footer-xl{
+            height:100%;
+            background: url(https://i.loli.net/2018/05/08/5af18399ec4c4.jpg) center center no-repeat;
+            background-size:cover;
+            opacity:0.7;
+        }
+        .footer-xl h2{
+           padding-top:150px;
+        }
+        .footer-xl p{
+            padding:25px;
+        }
+        .footer-xl::after{
+            content:'';
+            display:block;
+            clear:both;
+
+        }
+        .footer-xl .ch{
+            float:left;
+            width:45%;
+            height:150px;
+
+        }
+        .footer-xl .bh{
+            float:right;
+            height:150px;
+            width:45%;
+        }
+        .footer-xl  .footer-dl{
+            margin-top:65px;
+        }
+        .footer-hh{
+            color:#000;
+            width:200px;
+            display:inline-block;
+            padding:10px 0 10px 0;
+            text-align:center;
+            margin-top:80px;
+            border:1px solid #ffff77;
+            border-radius:8px;
+            background-color:#ffff77;
+        }
+        .footer-hh:hover{
+            opacity:0.7;
+        }
+        .footer-dd:nth-of-type(2){
+            margin-top:35px;
+        }
+        .footer-dd:nth-of-type(3){
+            margin-top:35px;
+        }
+
+    </style>
+
+</head>
+<body>
+<header class="flex-con">
+    <div class="nav layout indexfix">
+        <a href="" class=logo>PLAYERUNKNOWN</a>
+        <ul class="navbr">
+            <li><a href="">Services</a></li>
+            <li><a href="">Family</a></li>
+            <li><a href="">Characters</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="con layout">
+        <h1>Please let the world end now</h1>
+        <h2>Welcome to here</h2>
+        <a href="" class="button">Tell me more</a>
+    </div>
+</header>
+<main>
+    <section>
+        <h2>Introduction of weapons </h2>
+        <p>Various categories of weapons </p>
+        <ul class="indexfix family-con">
+            <li>
+                <span class="iconfont icon-famil"></span>
+                <h3>AKM</h3>
+                <p>这是一把使用7.62mm的武器,远程单点，近战全自动，伤害不错，缺点就是后座力太大，没有补偿器会飘，不推荐新手使用。</p>
+            </li>
+            <li>
+                <span class="iconfont icon-famil"></span>
+                <h3>M416</h3>
+                <p>
+                    使用5.56mm，拥有单发和全自动两种模式。需要5个配件，满配后座力小，威力要稍小于AKM，是新手的较好选择，缺点是配件不好找。</p>
+            </li>
+            <li class="fon">
+                <span class="iconfont icon-famil"></span>
+                <h3>SCAR</h3>
+                <p>
+                    使用5.56mm，威力与M416相同，也是单点与全自动两种模式。需要4配件，中近稳定，远程稍差。</p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Arms family</h2>
+        <p>Introduction of common weapons </p>
+        <ul  class="indexfix family-con">
+            <li class="bbb">
+                <a href=""  class="nnn"><img src="https://i.loli.net/2018/05/07/5aefd37960acf.jpeg" alt="9185f81f136bdb6d8c2a3de62cc7ef2e.jpeg" title="9185f81f136bdb6d8c2a3de62cc7ef2e.jpeg " width=180px; height=180px;/></a>
+                <h3>AKM</h3>
+                <p>The drawback is that the back seat is too big. </p>
+            </li >
+            <li class="bbb">
+                <a href="" class="nnn"><img src="https://i.loli.net/2018/05/07/5aefd1428be1c.jpeg" alt="6125a6de8df5c1dc3294c24b6becf28e.jpeg" title="6125a6de8df5c1dc3294c24b6becf28e.jpeg"  width=180px; height=180px; /></a>
+                <h3>M416</h3>
+                <p>The drawback is that the accessories are not easy to find.</p>
+            </li>
+            <li class="bbb">
+                <a href=""  class="nnn"><img src="https://i.loli.net/2018/05/07/5aefd1c70efff.jpg" alt="bb551d605a5fa8aa9a4bd145be4aa18f.jpg" title="bb551d605a5fa8aa9a4bd145be4aa18f.jpg"  width=180px; height=180px; /></a>
+                <h3>SCAR</h3>
+                <p>Need 4 parts, near stable, long distance poor. </p>
+            </li>
+            <li class="bbb">
+                <a href=""  class="nnn"><img src="https://i.loli.net/2018/05/07/5aefd21766b4c.jpg" alt="c6ace8eb7e0f96899e7c6fe58f3e3039.jpg" title="c6ace8eb7e0f96899e7c6fe58f3e3039.jpg"  width=180px; height=180px;/></a>
+                <h3>GROZA</h3>
+                <p>Great power, small back seat, shortcoming is not good inspection.</p>
+            </li>
+            <li class="bbb">
+                <a href=""  class="nnn"><img src="https://i.loli.net/2018/05/07/5aefd2cf709b7.jpg" alt="dfd373575feaa23d02192e18b1ca56c9.jpg" title="dfd373575feaa23d02192e18b1ca56c9.jpg" width=180px; height=180px;/></a>
+                <h3>S686</h3>
+                <p>It can be almost continuous, and the fault tolerance rate is very low. </p>
+            </li>
+            <li class="bbb">
+                <a href=""  class="nnn"><img src="https://i.loli.net/2018/05/07/5aefd32291dd9.jpeg" alt="93106371050a9821c59bf441b2819991.jpeg" title="93106371050a9821c59bf441b2819991.jpeg" width=180px; height=180px;/></a>
+                <h3>Kar98k</h3>
+                <p>But the fault tolerance rate is low, and if hit, it may bring life danger.</p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>History of time </h2>
+        <p>The development course of recent years  </p>
+        <ul class="hhh indexfix">
+            <li>
+                <img src="https://i.loli.net/2018/05/07/5af0122e60f1e.png" alt="8cf58d51755f2d375e524f5256adf617.png" title="8cf58d51755f2d375e524f5256adf617.png" />
+                <dl>
+                    <dt>February 2017 </dt>
+                    <dd>Formal formation and online </dd>
+                    <dd>It's a bit like the plot of Kinji Fukasaku's masterpiece "big escape": at the same time, it was dropped to a desert island with 100 players, collecting equipment, hiding, moving, killing, avoiding being killed. </dd>
+                </dl>
+            </li>
+            <li>
+                <img src="https://i.loli.net/2018/05/07/5af0122e60f1e.png" alt="8cf58d51755f2d375e524f5256adf617.png" title="8cf58d51755f2d375e524f5256adf617.png" />
+                <dl>
+                    <dt>February 2017 </dt>
+                    <dd>Formal formation and online </dd>
+                    <dd>It's a bit like the plot of Kinji Fukasaku's masterpiece "big escape": at the same time, it was dropped to a desert island with 100 players, collecting equipment, hiding, moving, killing, avoiding being killed. </dd>
+                </dl>
+            </li>
+            <li>
+                <img src="https://i.loli.net/2018/05/07/5af0122e60f1e.png" alt="8cf58d51755f2d375e524f5256adf617.png" title="8cf58d51755f2d375e524f5256adf617.png" />
+                <dl>
+                    <dt>February 2017 </dt>
+                    <dd>Formal formation and online </dd>
+                    <dd>It's a bit like the plot of Kinji Fukasaku's masterpiece "big escape": at the same time, it was dropped to a desert island with 100 players, collecting equipment, hiding, moving, killing, avoiding being killed. </dd>
+                </dl>
+            </li>
+            <li>
+                <img src="https://i.loli.net/2018/05/07/5af0122e60f1e.png" alt="8cf58d51755f2d375e524f5256adf617.png" title="8cf58d51755f2d375e524f5256adf617.png" />
+                <dl>
+                    <dt>February 2017 </dt>
+                    <dd>Formal formation and online </dd>
+                    <dd>It's a bit like the plot of Kinji Fukasaku's masterpiece "big escape": at the same time, it was dropped to a desert island with 100 players, collecting equipment, hiding, moving, killing, avoiding being killed. </dd>
+                </dl>
+            </li>
+            <li>
+                <img src="https://i.loli.net/2018/05/07/5af0192d95eba.png" alt="8cf58d51755f2d375e524f5256adf617.png" title="8cf58d51755f2d375e524f5256adf617.png" />
+                <dl>
+                    <dt>February 2017 </dt>
+                    <dd>Formal formation and online </dd>
+                    <dd>It's a bit like the plot of Kinji Fukasaku's masterpiece "big escape": at the same time, it was dropped to a desert island with 100 players, collecting equipment, hiding, moving, killing, avoiding being killed. </dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="tag"><img src="https://i.loli.net/2018/05/07/5af0192d95eba.png" alt="8cf58d51755f2d375e524f5256adf617.png" title="8cf58d51755f2d375e524f5256adf617.png" /></div>
+    </section>
+</main>
+<footer>
+    <h2>Personage introduction </h2>
+    <h3>Introduction of main anchors</h3>
+    <ul class="items">
+        <li>
+            <img src="https://i.loli.net/2018/05/08/5af163d8eb4b0.jpeg" alt="14ce44ec6588029a9126aee69b144c5c.jpeg" title="14ce44ec6588029a9126aee69b144c5c.jpeg" />
+            <dl>
+                <dt>小叮当</dt>
+                <dd>Bull force anchor, Jedi survivor </dd>
+            </dl>
+        </li>
+        <li>
+            <img src="https://i.loli.net/2018/05/08/5af164b07bdab.jpg" alt="59e508ae84c64adb05429754b532c16c.jpg" title="59e508ae84c64adb05429754b532c16c.jpg" />
+            <dl>
+                <dt>韦神</dt>
+                <dd>Bull force anchor, Jedi survivor</dd>
+            </dl>
+        </li>
+        <li>
+            <img src="https://i.loli.net/2018/05/08/5af1654646daa.png" alt="34787f29387ae00b48f094eb3baccd80.png" title="34787f29387ae00b48f094eb3baccd80.png" />
+            <dl>
+                <dt>国外主播</dt>
+                <dd>Bull force anchor, Jedi survivor</dd>
+            </dl>
+        </li>
+    </ul>
+    <div class="footer-ml">
+        <div class="footer-xl">
+            <h2>CONTACT US</h2>
+            <p>Winter is Comming</p>
+            <div class="footer-dl ch">
+                <div class="footer-dd"><input type="text" placeholder="MOUR NAME"></div>
+                <div class="footer-dd"><input type="text" placeholder="YOUR EMAIL"></div>
+                <div class="footer-dd"><input type="text" placeholder="YOUR PHONE"></div>
+            </div>
+            <div class="footer-dl bh">
+                <textarea name="article" id="" cols="30" rows="10">YOUR MESSAGE</textarea>
+            </div>
+            <div class="footer-hh"><buttom>SEND MESSAGE</buttom></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
